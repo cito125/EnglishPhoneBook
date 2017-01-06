@@ -2,7 +2,7 @@
 Phonebook that only displays sections that has names. If you only have Andres in your phonebook only thing shown is: A, Andres. If you add Erick: A, Andres, E, Erick.
 
 
-I wanted to make a phonebook that could perhaps be used for different languages with different alphabets and such.
+I wanted to make a phonebook that could perhaps be used for different languages with different alphabets and such if developers decide to use this phonebook in the future globally. Hopefully I built something that can be developed and built off of.
 
 
 Haven't used a map before, turns out they're super cool.
