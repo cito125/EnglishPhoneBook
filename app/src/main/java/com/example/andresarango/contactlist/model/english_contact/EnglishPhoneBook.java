@@ -24,6 +24,19 @@ public class EnglishPhoneBook implements Phonebook {
         return mPhoneBook;
     }
 
+    private String getContact(String contact) {
+        List<Set<EnglishContact>> contactList = new ArrayList<>(mPhoneBook.values());
+        int index = getContactIndex(contact.charAt(0));
+        Set<EnglishContact> englishContactSet = contactList.get(index);
+        for(Iterator<EnglishContact> it = englishContactSet.iterator(); it.hasNext();){
+            EnglishContact englishContact = it.next();
+            if(englishContact.getName().equalsIgnoreCase(contact)){
+                return englishContact.getName();
+            }
+        }
+        return null;
+    }
+
     public EnglishPhoneBook() {
         makePhonebook();
     }
